@@ -1,0 +1,110 @@
+@import "_button";
+@import "../helpers/_variables";
+
+body {
+
+  .cover {
+    margin-bottom: 30px;
+    width: 100%;
+    padding-bottom: 40px;
+    background: $cover-color;
+    display: block;
+    color: whitesmoke;
+  }
+  .block-titr {
+    text-align: left;
+    background: $titr-color;
+    padding: 10px;
+    @include vendor-prefixes(border-top-left-radius, 0.5rem);
+    @include vendor-prefixes(border-top-right-radius, 0.5rem);
+    color: $light-text;
+    border-bottom: solid 2px;
+    border-color: $hover-color;
+  }
+  .fixSize {
+    clear: both;
+    display: block;
+    width: 0px;
+    height: 0px;
+  }
+  .event-footer {
+    color: $light-text;
+    border-top: solid 2px;
+    border-color: $hover-color;
+    padding: 5px;
+    font-size: 12px;
+    display: block;
+    @include vendor-prefixes(border-bottom-left-radius, 0.5rem);
+    @include vendor-prefixes(border-bottom-right-radius, 0.5rem);
+    clear: both;
+    .date {
+      float: left;
+    }
+    .likes {
+      float: right;
+    }
+  }
+  .gallery {
+    display: block;
+    padding-bottom: 30px;
+    padding-left: 20px;
+    background: $titr-color;
+    margin-top: 40px;
+    text-align: center;
+    img {
+      height: 170px;
+      margin-top: 25px;
+      display: inline-block;
+      transition: 0.2s;
+      &:hover {
+        transform: scale(1.2,1.2);
+        //height: 220px;
+        //position: relative;
+        //top: 25px;
+        //margin-top: -25px;
+      }
+    }
+  }
+  .post {
+    text-align: left;
+    font-family: "Arial", Georgia, Serif;
+    width: 100%;
+    background: $titr-color;
+    border-radius: 5px;
+    margin-top: 10px;
+    color: $light-text;
+    .text {
+      margin: 0.5rem;
+    }
+    .image {
+      width: 100%;
+      //        border: solid $hover-color 2px;
+    }
+    .writer {
+      box-sizing: border-box;
+      background: $cover-color;
+      margin-top: 1rem;
+      padding: 0.5rem;
+      width: 100%;
+      font-size: 0.8rem;
+      .pic {
+        width: 20%;
+        margin-right: 1rem;
+        @include vendor-prefixes(border-radius, 50%);
+        float: left;
+      }
+    }
+  }
+  //.block-item {
+  //  background: $titr-color;
+  //  border-top: solid 2px;
+  //  border-bottom: solid 2px;
+  //  border-color: $hover-color;
+  //  background: $titr-color;
+  //  color: $light-text;
+  //  display: inline-block;
+  //  margin: 5px;
+  //  margin-right: 10px;
+  //  font-size: 13px;
+  //}
+}

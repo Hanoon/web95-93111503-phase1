@@ -1,0 +1,8 @@
+@import "../helpers/variables";
+.button {
+  display: inline-block;
+  float: right;
+  background: $button-color;
+  padding: 10px;
+  border-radius: 5px;
+}

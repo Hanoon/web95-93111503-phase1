@@ -1,0 +1,105 @@
+@import "../components/_components";
+@import "../helpers/_variables";
+@import '../base/_reset';
+
+.cover {
+  .center {
+    text-align: center;
+    padding: 2rem;
+    margin-top: 0;
+  }
+}
+.month {
+  margin-top: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  display: block;
+  .center {
+    width: 12%;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    display: block;
+    text-align: center;
+    margin: auto;
+    .month-box {
+      background: $hover-color;
+      padding: 0.3rem;
+      @include vendor-prefixes(border-radius, 0.3rem);
+      text-align: center;
+      z-index: 10;
+    }
+  }
+  .center-line {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    width: 0px;
+    height: 150%;
+    border: solid $titr-color 0.1rem;
+    display: block;
+    z-index: -1;
+    margin: auto;
+  }
+  .left {
+    float: left;
+    margin-left: 10%;
+    display: block;
+    clear: left;
+  }
+  .right {
+    float: right;
+    margin-right: 10%;
+    display: block;
+    clear: right;
+    position: relative;
+    top: -6rem;
+  }
+  .circle {
+    width: 10rem;
+    height: 0.2rem;
+    background: $titr-color;;
+    @include vendor-prefixes(border-radius, 0.3rem);
+    margin: 3rem 50% 6.25rem 50%;
+  }
+  .event {
+    position: relative;
+    top: 1.2rem;
+    @include vendor-prefixes(border-radius, 0.3rem);
+    @media screen and (min-width: $mobile-width) {
+      width: 80%;
+    }
+    @media screen and (min-width: $tablet-width) {
+      width: 32%;
+    }
+//    width: 32%;
+    margin-top: 1.2rem;
+    display: block;
+    background: $titr-color;
+    .block-item {
+      background: $titr-color;
+      .text {
+        font-family: "Arial", Georgia, Serif;
+        .image {
+          @media screen and (min-width: $mobile-width) {
+            width: 100.7%;
+            margin-bottom: 0.2rem;
+          }
+          @media screen and (min-width: $tablet-width) {
+            width: 45%;
+            margin-right: 0.3rem;
+            float: left;
+            font-size: 0.85rem;
+          }
+          display: inline-block;
+        }
+        background: $titr-color;
+        color: $light-text;
+        display: inline-block;
+        margin: 0.3rem;
+        margin-right: 0.6rem;
+      }
+    }
+  }
+}

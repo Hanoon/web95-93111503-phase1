@@ -1,0 +1,36 @@
+
+.myblog-body {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  padding-bottom: 1rem;
+  text-align: center;
+  margin: auto;
+  width: 80%;
+  .column {
+    display: inline-table;
+    padding: 0.7rem;
+    @media screen and (min-width: $mobile-width) {
+      width: 90%;
+    }
+    @media screen and (min-width: $tablet-width) {
+      width: 30%;
+    }
+    @media screen and (min-width: $desktop-width) {
+      width: 22%;
+    }
+    .post {
+      &:hover {
+        background: $hover-color;
+        .block-titr {
+          background: $hover-color;
+        }
+      }
+    }
+    .button {
+      float: left;
+      margin-left: 0.5rem;
+   //   background: $background-color;
+    }
+  }
+}

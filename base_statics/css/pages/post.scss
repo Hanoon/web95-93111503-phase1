@@ -1,0 +1,35 @@
+@import "../components/_components";
+@import "../helpers/_variables";
+@import '../base/_reset';
+
+.post-image {
+  float: right;
+  width: 50%;
+  @media screen and (min-width: $desktop-width) {
+    width: 35%;
+  }
+  margin: 0.7rem;
+  @include vendor-prefixes(border-radius, 0.5rem)
+}
+
+.post-titr {
+  padding: 1rem;
+  border-bottom: solid $hover-color 0.5 rem;
+  background: $cover-color;
+  @include vendor-prefixes(border-top-left-radius, 0.5rem);
+  @include vendor-prefixes(border-top-right-radius, 0.5rem);
+  .titr {
+    display: inline-block;
+  }
+  .pic {
+    display: inline-block;
+    float: right;
+    width: 10%;
+    @include vendor-prefixes(border-radius, 50%)
+  }
+  .info {
+    float: right;
+    display: inline-block;
+    top: 50%;
+  }
+}
