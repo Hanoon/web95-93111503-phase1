@@ -1,5 +1,15 @@
+@import "../helpers/mixins";
 
 .myblog-body {
+  @media screen and (min-width: $mobile-width) {
+    @include vendor-prefixes(column-count, 1);
+  }
+  @media screen and (min-width: $tablet-width) {
+    @include vendor-prefixes(column-count, 3);
+  }
+  @media screen and (min-width: $desktop-width) {
+    @include vendor-prefixes(column-count, 4);
+  }
   position: absolute;
   left: 0px;
   right: 0px;
@@ -7,30 +17,18 @@
   text-align: center;
   margin: auto;
   width: 80%;
-  .column {
-    display: inline-table;
-    padding: 0.7rem;
-    @media screen and (min-width: $mobile-width) {
-      width: 90%;
-    }
-    @media screen and (min-width: $tablet-width) {
-      width: 30%;
-    }
-    @media screen and (min-width: $desktop-width) {
-      width: 22%;
-    }
-    .post {
-      &:hover {
+  .post {
+    display: inline-block;
+    //    padding: 0.7rem;
+    &:hover {
+      background: $hover-color;
+      .block-titr {
         background: $hover-color;
-        .block-titr {
-          background: $hover-color;
-        }
       }
     }
-    .button {
-      float: left;
-      margin-left: 0.5rem;
-   //   background: $background-color;
-    }
+  }
+  .button {
+    float: left;
+    margin-left: 0.5rem;
   }
 }

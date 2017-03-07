@@ -7,9 +7,13 @@
 }
 
 body {
+  font-family: sans-serif;
+  background: $background-color;
+  display: block;
+
   .cover {
-    padding: 1rem;
-    padding-bottom: 0.5rem;
+    box-sizing: border-box;
+    padding: 1rem 1rem 1rem 1rem;
     .image {
       @include vendor-prefixes(border-radius, 0.3rem);
       float: left;
@@ -44,11 +48,10 @@ body {
       width: 60%;
 
       .block-item {
-        border: solid;
         @include vendor-prefixes(border-bottom-right-radius, 5px);
         @include vendor-prefixes(border-bottom-left-radius, 5px);
-        border-width: 2px;
-        border-color: $titr-color;
+        border: solid $titr-color 0.13rem;
+        box-sizing: border-box;
         padding: 20px;
         display: block;
 
@@ -74,14 +77,17 @@ body {
     .bar {
       float: left;
       width: 17%;
-      background: $cover-color;
+      background: $titr-color;
+      background: -webkit-linear-gradient(right, darkcyan, #002b2b); /* For Safari 5.1 to 6.0 */
+      background: -o-linear-gradient(right, darkcyan, #002b2b); /* For Opera 11.1 to 12.0 */
+      background: -moz-linear-gradient(right, darkcyan, #002b2b); /* For Firefox 3.6 to 15 */
+      background: linear-gradient(right, darkcyan, #002b2b);
       .bar-item {
         color: $light-text;
+        box-sizing: border-box;
         padding: 15px;
-        border: solid;
-        border-width: 0px;
+        border: solid $hover-color 0rem;
         border-bottom-width: 2px;
-        border-color: $hover-color;
       }
     }
   }

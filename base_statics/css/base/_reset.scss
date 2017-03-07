@@ -4,6 +4,7 @@ a:link, visited, hover, active {
 }
 
 p {
+  box-sizing: border-box;
   margin: 1px;
   padding: 1px;
 }
@@ -11,8 +12,6 @@ p {
 body, html {
   margin: 0px;
   padding: 0px;
-  font-family: sans-serif;
-  background: $background-color;
-  display: block;
-
+  width: 100%;
+  font-size: 1rem;
 }
