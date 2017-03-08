@@ -88,6 +88,7 @@ body {
       @media screen and (min-width: $tablet-width) {
         float: left;
         width: 17%;
+        text-align: left;
       }
       background: $titr-color;
       background: -webkit-linear-gradient(right, darkcyan, #002b2b); /* For Safari 5.1 to 6.0 */

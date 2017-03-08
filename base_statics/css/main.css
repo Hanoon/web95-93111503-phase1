@@ -227,7 +227,8 @@ body {
       @media screen and (min-width: 1080px) {
         body .body .bar {
           float: left;
-          width: 17%; } }
+          width: 17%;
+          text-align: left; } }
       body .body .bar .bar-item {
         color: whitesmoke;
         box-sizing: border-box;
